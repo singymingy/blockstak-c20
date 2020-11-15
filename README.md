@@ -25,6 +25,7 @@ It uses below mentinoed open source tools
 
 STEP-1 :
 
+![Just layout how , Packer + Ansible + Vault works togather ](images/packer_A.png)
 
 It requires account on AWS / OCI / Local DCs for multiple cloud deployment.
 
@@ -36,6 +37,7 @@ Once Account is ready on cloud provider end, let setup access key for local user
 By using ansible provisioner in packer , let create AMI for AWS
 
 IaC - Infrastucture as Code
+![IaC](images/Iac_A.png)
 It covers network , node deployments which docker ready stacks.
 
 Let use terraform to deploy VPC ( Virtual Private Cloud ) and then deploy require no of EC2 instances by above created AMI in STEP-1.
