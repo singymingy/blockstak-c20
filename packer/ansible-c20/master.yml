@@ -1,0 +1,8 @@
+--- 
+- name: Setup DOCKER HOST
+  hosts:  all
+  user: centos
+  become: yes
+
+  roles:
+    - singymingy_docker

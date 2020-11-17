@@ -1,0 +1,22 @@
+---
+# tasks file for singymingy_docker
+
+- name: setup DOCKER-CE official repository
+  shell: yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+  args:
+    creates: /etc/yum.repos.d/docker-ce.repo
+    
+
+- name: Install required pkgs
+  yum:
+    name:
+      - docker-ce
+      - docker-ce-cli
+      - containerd.io
+    state:  present
+
+- name: Configure DOCKER service
+  service:
+    name: docker
+    state: started
+    enabled: yes

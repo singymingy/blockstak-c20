@@ -1,0 +1,13 @@
+{
+    "builders": [{
+        "type":"amazon-ebs",
+        "source_ami": "ami-08bd00d7713a39e7d", 
+        "instance_type": "t2.micro",
+        "ssh_username": "centos",
+        "ami_name": "packer-docker-{{timestamp}}"
+    }],
+       "provisioners": [{
+        "type": "ansible",
+        "playbook_file": "../ansible-c20/master.yml"
+    }]
+}
