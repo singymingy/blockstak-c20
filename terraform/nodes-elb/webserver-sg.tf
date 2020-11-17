@@ -25,7 +25,7 @@ resource "aws_security_group" "nodes_sg" {
     cidr_blocks = [var.myip]
   }
   ingress {
-    description = "port 20443 - web access from myIP"
+    description = "port 20443 - access within lb local subnet"
     from_port   = var.web_port
     to_port     = var.web_port
     protocol    = "tcp"
