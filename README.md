@@ -12,7 +12,7 @@ It uses below mentinoed open source tools and providers...
 * [Packer](https://www.packer.io/) - Build Automated Machine Images
 * [Terraform](https://www.terraform.io/) - Infrastructure as Code to provision and manage any cloud, infrastructure, or service
 * [Blockstack](https://www.blockstack.org/) - Blockstack is an open-source and developer-friendly network for building decentralized apps and smart contracts.
-* [AWS] (https://aws.amazon.com/) - Amazon Web Service - Cloud Computing Services
+* [AWS](https://aws.amazon.com/) - Amazon Web Service - Cloud Computing Services
 * [OCI](https://www.oracle.com/cloud/) - Oracle Cloud Infrastructure
 * [LINUX](https://www.centos.org/) - Open Source Linux Operating System
 * [CONTAINER](https://www.docker.com/) - Container software
